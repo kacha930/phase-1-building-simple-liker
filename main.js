@@ -4,6 +4,14 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+function createHiddenModal(){
+  if(!document.querySelector('.hidden')){
+    const modal = document.createElement('div');
+    modal.className = 'hidden';
+    document.body.appendChild(modal);
+  }
+}
+createHiddenModal();
 
 
 
